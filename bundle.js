@@ -1,1 +1,14 @@
-var MyComponent=function(e){"use strict";function t(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}var n=t(e);return function(){return React.createElement(React.Fragment,null,React.createElement(n.default,{greeting:"salam"}))}}(Btnmodal);
+var MyComponent = (function () {
+  "use strict";
+  return function () {
+    return React.createElement(
+      React.Fragment,
+      null,
+      React.createElement(
+        "h1",
+        null,
+        "hiasdsakdjadsalkfhjksadlfhsadjklghsdjlgk"
+      )
+    );
+  };
+})();
