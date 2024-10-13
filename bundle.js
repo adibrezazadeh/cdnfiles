@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@/components/Btnmodal')) :
   typeof define === 'function' && define.amd ? define(['@/components/Btnmodal'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.MyComponent = factory(global.Btnmodal));
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.MyReactComponent = factory(global.Btnmodal));
 })(this, (function (Btnmodal) { 'use strict';
 
   function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
