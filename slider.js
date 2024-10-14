@@ -8,7 +8,7 @@
 
   var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
-  const Slider = () => {
+  var Slider = () => {
     const [businessName, setBusinessName] = React.useState("");
     React.useEffect(() => {
       const fetchData = async () => {
