@@ -1,14 +1,14 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react')) :
   typeof define === 'function' && define.amd ? define(['react'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.slider = factory(global.React));
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Slider = factory(global.React));
 })(this, (function (React) { 'use strict';
 
   function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
   var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
-  var Slider = () => {
+  const Slider = () => {
     const [businessName, setBusinessName] = React.useState("");
     React.useEffect(() => {
       const fetchData = async () => {
