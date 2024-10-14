@@ -27,4 +27,4 @@ var Slider = (function (e) {
     );
   };
   return l;
-})(React);
+});
