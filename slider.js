@@ -9,8 +9,8 @@
   var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
   const Slider = () => {
-    const [businessName, setBusinessName] = React.useState("");
-    React.useEffect(() => {
+    const [businessName, setBusinessName] = useState("");
+    useEffect(() => {
       const fetchData = async () => {
         const response = await fetch(`https://api.hillzusers.com/api/dealership/single/by/url/localhost:3000`);
         const data = await response.json();
