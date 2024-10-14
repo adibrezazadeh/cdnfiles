@@ -26,5 +26,5 @@ var Slider = (function (e) {
       )
     );
   };
-  return 1;
+  return l; // این خط تغییر کرده است
 });
