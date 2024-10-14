@@ -1,32 +1,30 @@
-(function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react')) :
-  typeof define === 'function' && define.amd ? define(['react'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Slider = factory(global.React));
-})(this, (function (React) { 'use strict';
-
-  function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-  var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
-
-  const Slider = () => {
-    const [businessName, setBusinessName] = React.useState("");
-    React.useEffect(() => {
-      const fetchData = async () => {
-        const response = await fetch(`https://api.hillzusers.com/api/dealership/single/by/url/localhost:3000`);
-        const data = await response.json();
-        setBusinessName(data);
-      };
-      fetchData();
-
-      // ثبت کامپوننت به عنوان یک متغیر جهانی در window
-      if (typeof window !== "undefined") {
-        window.Slider = Slider;
-      }
-    }, []);
-    console.log("bbbbb", businessName);
-    return /*#__PURE__*/React__default["default"].createElement("div", null, "Slider", /*#__PURE__*/React__default["default"].createElement("h1", null, businessName?.bussiness_name));
+var Slider = (function (e) {
+  "use strict";
+  function t(e) {
+    return e && "object" == typeof e && "default" in e ? e : { default: e };
+  }
+  var n = t(e);
+  const l = () => {
+    const [t, a] = e.useState("");
+    return (
+      e.useEffect(() => {
+        (async () => {
+          const e = await fetch(
+              "https://api.hillzusers.com/api/dealership/single/by/url/localhost:3000"
+            ),
+            t = await e.json();
+          a(t);
+        })(),
+          "undefined" != typeof window && (window.Slider = l);
+      }, []),
+      console.log("bbbbb", t),
+      n.default.createElement(
+        "div",
+        null,
+        "Slider",
+        n.default.createElement("h1", null, t?.bussiness_name)
+      )
+    );
   };
-
-  return Slider;
-
-}));
+  return l;
+})(React);
