@@ -26,5 +26,5 @@ var Slider = (function (e) {
       )
     );
   };
-  return e;
+  return 1;
 });
